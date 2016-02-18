@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="JPMC" enabled="True">
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="dbUrl" value="jdbc:oracle:thin:@lod1796:1521:NIKU114"/>
+  	 <parameter name="dbusername" value="PPM_DWH_CG"/>
+  	 <parameter name="dbpassword" value="Clarity#1234"/>
+  	 <parameter name="dbquery" value="SELECT TABLE_NAME, RECORD_COUNT, POPULATION_TIME_SEC  FROM DWH_GATHER_METRICS_V WHERE TABLE_NAME NOT IN ('DWH_CFG_LOG','DWH_CFG_TABLE_AUDIT','DWH_FK_PK_EXCEPTIONS','DWH_META_COLUMNS','DWH_META_INDEXES','DWH_META_TABLES') ORDER BY TABLE_NAME"/>
+  	 <parameter name="OutPutRes" value="JPMC_OutPut"/>
+         <classes>       
+       <class name="JobRun.RunLoadJob"/>          
+     </classes>        
+  </test>
+  
+    <test name="TWC" enabled="False">
+  	 <parameter name="URL" value="http://ppm-amex:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="dbUrl" value="jdbc:oracle:thin:@lod1796:1521:NIKU114"/>
+  	 <parameter name="dbusername" value="PPM_DWH_CG"/>
+  	 <parameter name="dbpassword" value="Clarity#1234"/>
+  	 <parameter name="dbquery" value="SELECT TABLE_NAME, RECORD_COUNT, POPULATION_TIME_SEC  FROM DWH_GATHER_METRICS_V WHERE TABLE_NAME NOT IN ('DWH_CFG_LOG','DWH_CFG_TABLE_AUDIT','DWH_FK_PK_EXCEPTIONS','DWH_META_COLUMNS','DWH_META_INDEXES','DWH_META_TABLES') ORDER BY TABLE_NAME"/>
+  	 <parameter name="OutPutRes" value="TWC_OutPut"/>
+         <classes>
+         	<class name="JobRun.EnvSettings"/>
+       <class name="JobRun.RunLoadJob"/>      
+     </classes>        
+  </test> 
+  
+   <test name="PRESALES" enabled="False">
+  	 <parameter name="URL" value="http://cure-presales141:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="dbUrl" value="jdbc:oracle:thin:@lod1796:1521:NIKU114"/>
+  	 <parameter name="dbusername" value="PPM_DWH_CG"/>
+  	 <parameter name="dbpassword" value="Clarity#1234"/>
+  	 <parameter name="dbquery" value="SELECT TABLE_NAME, RECORD_COUNT, POPULATION_TIME_SEC  FROM DWH_GATHER_METRICS_V WHERE TABLE_NAME NOT IN ('DWH_CFG_LOG','DWH_CFG_TABLE_AUDIT','DWH_FK_PK_EXCEPTIONS','DWH_META_COLUMNS','DWH_META_INDEXES','DWH_META_TABLES') ORDER BY TABLE_NAME"/>
+  	 <parameter name="OutPutRes" value="PSAL_OutPut"/>
+         <classes>
+       <class name="JobRun.RunLoadJob"/>      
+     </classes>        
+  </test>
+  
+</suite> 
+
+
+

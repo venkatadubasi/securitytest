@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+'--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<test name="Security Testing 19" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Spaces are allowed after script and between"/>
+  	 <parameter name="ScriptFunc" value="&lt;/script[\r\n\s]*>"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+
+<test name="Security Testing 20" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after alert and ()]"/>
+  	 <parameter name="ScriptFunc" value="alert[\r\n\s]*\((.*?)\) "/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 21" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after confirm and ()]"/>
+  	 <parameter name="ScriptFunc" value="confirm[\r\n\s]*\((.*?)\)"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 22" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after eval and ()]"/>
+  	 <parameter name="ScriptFunc" value="eval[\r\n\s]*\((.*?)\)"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 23" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Spaces are allowed after onerror"/>
+  	 <parameter name="ScriptFunc" value="expression[\r\n\s]*\((.*?)\)"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+
+<test name="Security Testing 24" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after expression and ()]"/>
+  	 <parameter name="ScriptFunc" value="javascript[\r\n\s]*:"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 25" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after expression and ()]"/>
+  	 <parameter name="ScriptFunc" value="onerror[\r\n\s]*=\((.*?)\)"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 26" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+     <parameter name="TestScenerio" value="[Spaces are allowed after onload and values for src doesn't need"/>
+  	 <parameter name="ScriptFunc" value="prompt[\r\n\s]*\((.*?)\)"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+
+<test name="Security Testing 27" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after src and values for src doesn't need"/>
+  	 <parameter name="ScriptFunc" value="src[\r\n\s]*=(.*?) "/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+<test name="Security Testing 28" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="[Spaces are allowed after vbscript and :]"/>
+  	 <parameter name="ScriptFunc" value="vbscript[\r\n\s]*:"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+</test>
+
+'--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<test name="Security Testing 01" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="XSS Locator"/>
+  	 <parameter name="ScriptFunc" value=";alert(String.fromCharCode(88,83,83))"/>  	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  <test name="Security Testing 01_1" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="XSS Locator"/>
+  	 <parameter name="ScriptFunc" value=";Alert(String.fromCharCode(88,83,83))"/>  	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+            
+          
+   
+    <test name="Security Testing 02)" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="XSS Locator 02"/>
+  	 <parameter name="ScriptFunc" value="alert(String.fromCharCode(88,83,83))"/>  	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  <test name="Security Testing 03" enabled="True">
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="XSS Locator (short)"/>
+  	 <parameter name="ScriptFunc" value="&apos;&apos; ;!--&quot;&gt;XSS>=&amp;{()}"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+
+  <test name="Security Testing 04" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="No Filter Evasion"/>
+  	 <parameter name="ScriptFunc" value="&lt;SCRIPT SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT>"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  
+  <test name="Security Testing 05" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="No quotes and no semicolon"/>
+  	 <parameter name="ScriptFunc" value="&lt;IMG SRC=javascript:alert('XSS')>"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  <test name="Security Testing 06" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Case insensitive XSS attack vector"/>
+  	 <parameter name="ScriptFunc" value="&lt;IMG SRC=JaVaScRiPt:alert('XSS')>"/>   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+    <test name="Security Testing 07" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Malformed IMG tags"/>
+  	 <parameter name="ScriptFunc" value="&lt;IMG &quot;&quot;&quot;&gt;&lt;SCRIPT>alert(&quot;XSS&quot;)&lt;/SCRIPT&lt;&quot;&gt;&gt;"/>
+  	   <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  
+  <test name="Security Testing 08" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="IMG onerror and javascript alert encode"/>
+  	 <parameter name="ScriptFunc" value="&lt;img src=x onerror=&quot;&amp;&quot;"/>  	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  
+  <test name="Security Testing 09" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Decimal HTML character references without trailing semicolons"/>
+  	 <parameter name="ScriptFunc" value="SRC=&amp;#0000106&amp;#0000097&amp;#0000118&amp;#0000097&amp;#0000115&amp;#0000099&amp;#0000114&amp;#0000105&amp;#0000112&amp;#0000116&amp;#0000058&amp;#0000097&amp;#0000108&amp;#0000101&amp;#0000114&amp;#0000116&amp;#0000040&amp;#0000039&amp;#0000088&amp;#0000083&amp;#0000083&amp;#0000039&amp;#0000041&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+<test name="Security Testing 10" enabled="True">
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="IMG Dynsrc"/>
+  	 <parameter name="ScriptFunc" value="&lt;IMG DYNSRC=&quot;javascript:alert('XSS')&quot;&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+  
+  '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<test name="Security Testing 11" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Body OnLoad Java Script"/>
+  	 <parameter name="ScriptFunc" value="&lt;BODY ONLOAD=alert('XSS')>"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        
+  </test>
+
+<test name="Security Testing 12" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Body OnClick Event Java Script"/>
+  	 <parameter name="ScriptFunc" value="&lt;head&gt;&lt;script type=&quot;text/javascript&quot;&gt; function OnClickButton () { alert (&quot;You clicked on the button!&quot;);}&lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;button onclick=&quot;OnClickButton ()&quot;&gt;Click on me!&lt;/button&gt;&lt;/body&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+
+<test name="Security Testing 29" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ongotpointercapture"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ongotpointercapture=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 30" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="hashchange"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;hashchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 31" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="help"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;help=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 32" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="input"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;input=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 33" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="invalid"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;invalid=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 34" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="waiting"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;waiting=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 35" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="wheel"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;wheel=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 36" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onabort"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onabort=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 37" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onactivate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 38" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterprint"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 39" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterscriptexecute"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterscriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 40" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterupdate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 41" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterupdate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 42" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onautocompleteerror"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onautocompleteerror=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 43" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onariarequest"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onariarequest=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 44" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onanimationiteration"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onanimationiteration=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+<test name="Security Testing 45" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onabort"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onabort=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 46" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onactivate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 47" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterprint"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 48" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterscriptexecute"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterscriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+<test name="Security Testing 49" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onafterupdate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+<test name="Security Testing 50" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onanimationend"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onanimationend=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 51" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onanimationstart"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onanimationstart=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 52" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onautocomplete"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onautocomplete=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 53" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforeactivate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+
+<test name="Security Testing 54" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforecopy"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecopy=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 55" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforecut"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 56" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforecut"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 57" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforedeactivate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforedeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 58" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforeeditfocus"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeeditfocus=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+ <test name="Security Testing 59" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforeprint"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+   <test name="Security Testing 60" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforescriptexecute"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforescriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+    <test name="Security Testing 61" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforeunload"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeunload=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+ <test name="Security Testing 62" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbeforeupdate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+
+
+<test name="Security Testing 63" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbegin"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbegin=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 64" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onblur"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onblur=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+    <test name="Security Testing 65" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onbounce"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onbounce=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+    <test name="Security Testing 66" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncancel"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncancel=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+     <test name="Security Testing 67" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncanplay"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncanplay=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+   <test name="Security Testing 68" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncanplaythrough"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncanplaythrough=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 69" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncancellchange"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncancellchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  <test name="Security Testing 70" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onchange"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+   <test name="Security Testing 71" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="Body OnClick Event Java Script"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onclick=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+    <test name="Security Testing 72" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="onclose"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;onclose=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+    <test name="Security Testing 73" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncommand"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncommand=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+   <test name="Security Testing 74" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncontextmenu"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncontextmenu=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 75" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncontrolselect"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncontrolselect=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 76" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncopy"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncopy=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 77" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncuechange"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncuechange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 78" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="oncut"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;oncut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 79" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondataavailable"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondataavailable=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+   <test name="Security Testing 80" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondatasetchanged"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondatasetchanged=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+  <test name="Security Testing 81" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondatasetcomplete"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondatasetcomplete=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 82" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondblclick"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondblclick=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+    <test name="Security Testing 83" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondeactivate"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+     <test name="Security Testing 84" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondevicelight"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondevicelight=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+     <test name="Security Testing 85" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondevicemotion"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondevicemotion=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+   <test name="Security Testing 86" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondeviceorientation"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondeviceorientation=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+    <test name="Security Testing 87" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondeviceproximity"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondeviceproximity=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  
+   <test name="Security Testing 88" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondrag"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondrag=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 89" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondrag-drop"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondragdrop=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+  <test name="Security Testing 90" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondrag-end"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondragend=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+  
+   <test name="Security Testing 91" enabled="True">>
+  	 <parameter name="URL" value="http://ppmstage01:8080/"/>
+  	 <parameter name="UserName" value="admin"/>
+  	 <parameter name="Password" value="admin"/>
+  	 <parameter name="TestScenerio" value="ondrag-enter"/>
+  	 <parameter name="ScriptFunc" value="&lt;script&gt;ondragenter=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/> 	   	   	 
+     <classes>       
+       <class name="SecurityCheck.SecurityTest"/>          
+     </classes>        	
+  </test>
+</suite> 
+
+
+

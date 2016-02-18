@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="ScriptFunc" value="&lt;script&gt;ondragenter=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+  <parameter name="UserName" value="admin"/>
+  <parameter name="TestScenerio" value="ondrag-enter"/>
+  <parameter name="URL" value="http://ppmstage01:8080/"/>
+  <parameter name="Password" value="admin"/>
+  <test name="Security Testing 19(failed)">
+    <parameter name="ScriptFunc" value="&lt;/script[\r\n\s]*&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Spaces are allowed after script and between"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 19(failed) -->
+  <test name="Security Testing 20(failed)">
+    <parameter name="ScriptFunc" value="alert[\r\n\s]*\((.*?)\) "/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after alert and ()]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 20(failed) -->
+  <test name="Security Testing 21(failed)">
+    <parameter name="ScriptFunc" value="confirm[\r\n\s]*\((.*?)\)"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after confirm and ()]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 21(failed) -->
+  <test name="Security Testing 22(failed)">
+    <parameter name="ScriptFunc" value="eval[\r\n\s]*\((.*?)\)"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after eval and ()]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 22(failed) -->
+  <test name="Security Testing 23(failed)">
+    <parameter name="ScriptFunc" value="expression[\r\n\s]*\((.*?)\)"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Spaces are allowed after onerror"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 23(failed) -->
+  <test name="Security Testing 24(failed)">
+    <parameter name="ScriptFunc" value="javascript[\r\n\s]*:"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after expression and ()]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 24(failed) -->
+  <test name="Security Testing 25(failed)">
+    <parameter name="ScriptFunc" value="onerror[\r\n\s]*=\((.*?)\)"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after expression and ()]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 25(failed) -->
+  <test name="Security Testing 26(failed)">
+    <parameter name="ScriptFunc" value="prompt[\r\n\s]*\((.*?)\)"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after onload and values for src doesn&#039;t need"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 26(failed) -->
+  <test name="Security Testing 27(failed)">
+    <parameter name="ScriptFunc" value="src[\r\n\s]*=(.*?) "/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after src and values for src doesn&#039;t need"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 27(failed) -->
+  <test name="Security Testing 28(failed)">
+    <parameter name="ScriptFunc" value="vbscript[\r\n\s]*:"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="[Spaces are allowed after vbscript and :]"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="US3674_XSSLocators" invocation-numbers="0"/>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 28(failed) -->
+  <test name="Security Testing 01(failed)">
+    <parameter name="ScriptFunc" value=";alert(String.fromCharCode(88,83,83))"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="XSS Locator"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 01(failed) -->
+  <test name="Security Testing 01_1(failed)">
+    <parameter name="ScriptFunc" value=";Alert(String.fromCharCode(88,83,83))"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="XSS Locator"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 01_1(failed) -->
+  <test name="Security Testing 02)(failed)">
+    <parameter name="ScriptFunc" value="alert(String.fromCharCode(88,83,83))"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="XSS Locator 02"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 02)(failed) -->
+  <test name="Security Testing 03(failed)">
+    <parameter name="ScriptFunc" value="&#039;&#039; ;!--&quot;&gt;XSS&gt;=&amp;{()}"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="XSS Locator (short)"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 03(failed) -->
+  <test name="Security Testing 04(failed)">
+    <parameter name="ScriptFunc" value="&lt;SCRIPT SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="No Filter Evasion"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 04(failed) -->
+  <test name="Security Testing 05(failed)">
+    <parameter name="ScriptFunc" value="&lt;IMG SRC=javascript:alert(&#039;XSS&#039;)&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="No quotes and no semicolon"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 05(failed) -->
+  <test name="Security Testing 06(failed)">
+    <parameter name="ScriptFunc" value="&lt;IMG SRC=JaVaScRiPt:alert(&#039;XSS&#039;)&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Case insensitive XSS attack vector"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 06(failed) -->
+  <test name="Security Testing 07(failed)">
+    <parameter name="ScriptFunc" value="&lt;IMG &quot;&quot;&quot;&gt;&lt;SCRIPT&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&lt;&quot;&gt;&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Malformed IMG tags"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 07(failed) -->
+  <test name="Security Testing 08(failed)">
+    <parameter name="ScriptFunc" value="&lt;img src=x onerror=&quot;&amp;&quot;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="IMG onerror and javascript alert encode"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 08(failed) -->
+  <test name="Security Testing 09(failed)">
+    <parameter name="ScriptFunc" value="SRC=&amp;#0000106&amp;#0000097&amp;#0000118&amp;#0000097&amp;#0000115&amp;#0000099&amp;#0000114&amp;#0000105&amp;#0000112&amp;#0000116&amp;#0000058&amp;#0000097&amp;#0000108&amp;#0000101&amp;#0000114&amp;#0000116&amp;#0000040&amp;#0000039&amp;#0000088&amp;#0000083&amp;#0000083&amp;#0000039&amp;#0000041&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Decimal HTML character references without trailing semicolons"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 09(failed) -->
+  <test name="Security Testing 10(failed)">
+    <parameter name="ScriptFunc" value="&lt;IMG DYNSRC=&quot;javascript:alert(&#039;XSS&#039;)&quot;&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="IMG Dynsrc"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 10(failed) -->
+  <test name="Security Testing 11(failed)">
+    <parameter name="ScriptFunc" value="&lt;BODY ONLOAD=alert(&#039;XSS&#039;)&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Body OnLoad Java Script"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 11(failed) -->
+  <test name="Security Testing 12(failed)">
+    <parameter name="ScriptFunc" value="&lt;head&gt;&lt;script type=&quot;text/javascript&quot;&gt; function OnClickButton () { alert (&quot;You clicked on the button!&quot;);}&lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;button onclick=&quot;OnClickButton ()&quot;&gt;Click on me!&lt;/button&gt;&lt;/body&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Body OnClick Event Java Script"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 12(failed) -->
+  <test name="Security Testing 29(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ongotpointercapture=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ongotpointercapture"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 29(failed) -->
+  <test name="Security Testing 30(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;hashchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="hashchange"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 30(failed) -->
+  <test name="Security Testing 31(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;help=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="help"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 31(failed) -->
+  <test name="Security Testing 32(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;input=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="input"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 32(failed) -->
+  <test name="Security Testing 33(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;invalid=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="invalid"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 33(failed) -->
+  <test name="Security Testing 34(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;waiting=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="waiting"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 34(failed) -->
+  <test name="Security Testing 35(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;wheel=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="wheel"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 35(failed) -->
+  <test name="Security Testing 36(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onabort=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onabort"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 36(failed) -->
+  <test name="Security Testing 37(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onactivate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 37(failed) -->
+  <test name="Security Testing 38(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterprint"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 38(failed) -->
+  <test name="Security Testing 39(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterscriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterscriptexecute"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 39(failed) -->
+  <test name="Security Testing 40(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterupdate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 40(failed) -->
+  <test name="Security Testing 41(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterupdate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 41(failed) -->
+  <test name="Security Testing 42(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onautocompleteerror=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onautocompleteerror"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 42(failed) -->
+  <test name="Security Testing 43(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onariarequest=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onariarequest"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 43(failed) -->
+  <test name="Security Testing 44(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onanimationiteration=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onanimationiteration"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 44(failed) -->
+  <test name="Security Testing 45(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onabort=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onabort"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 45(failed) -->
+  <test name="Security Testing 46(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onactivate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 46(failed) -->
+  <test name="Security Testing 47(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterprint"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 47(failed) -->
+  <test name="Security Testing 48(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterscriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterscriptexecute"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 48(failed) -->
+  <test name="Security Testing 49(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onafterupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onafterupdate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 49(failed) -->
+  <test name="Security Testing 50(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onanimationend=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onanimationend"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 50(failed) -->
+  <test name="Security Testing 51(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onanimationstart=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onanimationstart"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 51(failed) -->
+  <test name="Security Testing 52(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onautocomplete=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onautocomplete"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 52(failed) -->
+  <test name="Security Testing 53(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforeactivate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 53(failed) -->
+  <test name="Security Testing 54(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecopy=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforecopy"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 54(failed) -->
+  <test name="Security Testing 55(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforecut"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 55(failed) -->
+  <test name="Security Testing 56(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforecut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforecut"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 56(failed) -->
+  <test name="Security Testing 57(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforedeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforedeactivate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 57(failed) -->
+  <test name="Security Testing 58(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeeditfocus=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforeeditfocus"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 58(failed) -->
+  <test name="Security Testing 59(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeprint=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforeprint"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 59(failed) -->
+  <test name="Security Testing 60(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforescriptexecute=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforescriptexecute"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 60(failed) -->
+  <test name="Security Testing 61(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeunload=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforeunload"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 61(failed) -->
+  <test name="Security Testing 62(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbeforeupdate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbeforeupdate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 62(failed) -->
+  <test name="Security Testing 63(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbegin=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbegin"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 63(failed) -->
+  <test name="Security Testing 64(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onblur=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onblur"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 64(failed) -->
+  <test name="Security Testing 65(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onbounce=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onbounce"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 65(failed) -->
+  <test name="Security Testing 66(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncancel=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncancel"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 66(failed) -->
+  <test name="Security Testing 67(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncanplay=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncanplay"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 67(failed) -->
+  <test name="Security Testing 68(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncanplaythrough=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncanplaythrough"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 68(failed) -->
+  <test name="Security Testing 69(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncancellchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncancellchange"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 69(failed) -->
+  <test name="Security Testing 70(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onchange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onchange"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 70(failed) -->
+  <test name="Security Testing 71(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onclick=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="Body OnClick Event Java Script"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 71(failed) -->
+  <test name="Security Testing 72(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;onclose=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="onclose"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 72(failed) -->
+  <test name="Security Testing 73(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncommand=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncommand"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 73(failed) -->
+  <test name="Security Testing 74(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncontextmenu=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncontextmenu"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 74(failed) -->
+  <test name="Security Testing 75(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncontrolselect=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncontrolselect"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 75(failed) -->
+  <test name="Security Testing 76(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncopy=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncopy"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 76(failed) -->
+  <test name="Security Testing 77(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncuechange=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncuechange"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 77(failed) -->
+  <test name="Security Testing 78(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;oncut=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="oncut"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 78(failed) -->
+  <test name="Security Testing 79(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondataavailable=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondataavailable"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 79(failed) -->
+  <test name="Security Testing 80(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondatasetchanged=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondatasetchanged"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 80(failed) -->
+  <test name="Security Testing 81(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondatasetcomplete=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondatasetcomplete"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 81(failed) -->
+  <test name="Security Testing 82(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondblclick=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondblclick"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 82(failed) -->
+  <test name="Security Testing 83(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondeactivate=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondeactivate"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 83(failed) -->
+  <test name="Security Testing 84(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondevicelight=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondevicelight"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 84(failed) -->
+  <test name="Security Testing 85(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondevicemotion=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondevicemotion"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 85(failed) -->
+  <test name="Security Testing 86(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondeviceorientation=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondeviceorientation"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 86(failed) -->
+  <test name="Security Testing 87(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondeviceproximity=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondeviceproximity"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 87(failed) -->
+  <test name="Security Testing 88(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondrag=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondrag"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 88(failed) -->
+  <test name="Security Testing 89(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondragdrop=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondrag-drop"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 89(failed) -->
+  <test name="Security Testing 90(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondragend=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondrag-end"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 90(failed) -->
+  <test name="Security Testing 91(failed)">
+    <parameter name="ScriptFunc" value="&lt;script&gt;ondragenter=function() {alert(&quot;TestMe!!&quot;);}&lt;/script&gt;"/>
+    <parameter name="UserName" value="admin"/>
+    <parameter name="TestScenerio" value="ondrag-enter"/>
+    <parameter name="URL" value="http://ppmstage01:8080/"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="SecurityCheck.SecurityTest">
+        <methods>
+          <include name="OpenWithChrome"/>
+        </methods>
+      </class> <!-- SecurityCheck.SecurityTest -->
+    </classes>
+  </test> <!-- Security Testing 91(failed) -->
+</suite> <!-- Failed suite [Suite] -->
